@@ -30,6 +30,9 @@
 		img {
 			border-radius: _size(border-radius);
 			display: block;
+	    width: 100%;
+      height: auto;
+      object-fit: cover;
 		}
 
 		&.left,
