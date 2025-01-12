@@ -158,42 +158,6 @@
 						</article>
 
 						<!-- Our Team Section -->
-.team-member {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.team-member img {
-  width: 150px; /* Increased width */
-  height: 100px; /* Cropped height of the Laccaria photo */
-  border-radius: 50%; /* Circle cropping for Claire Willing photo */
-  margin-right: 20px;
-  object-fit: cover;
-}
-
-.team-member div {
-  max-width: 1000px; /* Increased the width of the page */
-}
-
-.team-member h3 {
-  margin: 0;
-  font-size: 1.5em;
-  color: #333;
-}
-
-.team-member p {
-  margin: 5px 0;
-  color: #666;
-}
-
-.team-member .pronouns {
-  font-style: italic;
-  color: #999;
-}
-		
 <article id="people">
   <h2 class="major">Our Team</h2>
   <span class="image main">
@@ -238,8 +202,63 @@
   </div>
 </article>
 
+<!-- CSS -->
+<style>
+  .team-member {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
 
-					</article>
+  .team-member img {
+    width: 150px; /* Increased width */
+    height: 100px; /* Cropped height of the Laccaria photo */
+    border-radius: 50%; /* Circle cropping for Claire Willing photo */
+    margin-right: 20px;
+    object-fit: cover;
+  }
+
+  .team-member div {
+    max-width: 1000px; /* Increased the width of the page */
+    flex-grow: 1; /* Ensures the text area takes up available space */
+  }
+
+  .team-member h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+
+  .team-member p {
+    margin: 5px 0;
+    color: #666;
+  }
+
+  .team-member .pronouns {
+    font-style: italic;
+    color: #999;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image.main img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  h2.major {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+</style>
+
 
 						<!-- Here is a the "Contact" card. -->
 						<article id="contact">
