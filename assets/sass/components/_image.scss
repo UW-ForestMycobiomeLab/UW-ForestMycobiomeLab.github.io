@@ -30,9 +30,9 @@
 		img {
 			border-radius: _size(border-radius);
 			display: block;
-	    width: 100%;
-      height: auto;
-      object-fit: cover;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
 		}
 
 		&.left,
@@ -68,23 +68,37 @@
 
 		&.main {
 			display: block;
-			margin: (_size(element-margin) * 1.25) 0;
-			width: 100%;
-
+			margin: (_size(element-margin) * 1.25) auto; /* Center the image */
+			width: 100%; /* Make the image fill the full frame width */
+            
 			img {
-				width: 100%;
+                width: 100%;
+			}
+		}
+
+		&.wide {
+			display: block;
+			width: 100%; /* Make the image fill the full frame width */
+			height: 300px; /* Set the height for cropping */
+			overflow: hidden; /* Hide the overflow */
+			
+			img {
+                width: 100%;
+				height: auto;
+				object-fit: cover; /* Ensure the image covers the area */
+                object-position: 0 50%; /* Center the image */
 			}
 		}
 
 		@include breakpoint('<=small') {
 			&.main {
-				margin: (_size(element-margin) * 1) 0;
+				margin: (_size(element-margin) * 1) auto;
 			}
 		}
 
 		@include breakpoint('<=xsmall') {
 			&.main {
-				margin: (_size(element-margin) * 0.75) 0;
+				margin: (_size(element-margin) * 0.75) auto;
 			}
 		}
 	}
