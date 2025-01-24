@@ -49,7 +49,7 @@ Liv Filialuna (2023-2024)
 
 ``` html
 <p>
-Liv Filialuna, our incredible former lab manager, was instrumental in getting the lab up and running! Their past work includes studying the soil-stabilizing properties of post-fire fungi and creating a digital repository for mycological archives. An active member of the amateur mycology community, Liv volunteers on the North American Mycological Society’s Vouchering and Marketing committees. Passionate about public outreach, they aim to engage fungal enthusiasts in documenting their history and contributions to mycology.
+Liv Filialuna, our amazing lab manager, was instrumental in establishing the lab. Their work spans studying post-fire fungi's soil-stabilizing properties and creating a digital repository for mycological archives. As an active member of the North American Mycological Society, Liv serves on the Vouchering and Marketing committees. Passionate about outreach, they engage amateur mycologists in documenting their history and contributions to mycology.
 </p>
 ```
 
@@ -89,7 +89,7 @@ own!
 class="icon fa-orcid"> ORCID </a></li>
 
 <!-- The GitHub icon -->
-<li><a href="https://github.com/mira-ranganath" 
+<li><a href="#" 
 class="icon fa-github"> GitHub </a></li>
 
 <!-- The Instagram icon -->
