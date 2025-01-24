@@ -1,0 +1,99 @@
+---
+title: "Sarah_Bio"
+author: "Claire Willing"
+date: "2025-01-23"
+output: html_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+## Welcome to the lab! We are so glad that you are here.
+
+Please add your bio information below so that we can add you to our lab
+website!
+
+## Your photo (drop a in image in this [folder](https://drive.google.com/drive/folders/1b-t3DPjfUFfXADmTtV-1n9TBSngy8Q6j?usp=sharing))
+
+Please name your photo: firstname.jpg (Claire will add based on the code
+below)
+
+<div>
+
+``` html
+<div class="team-member">
+<img src="images/ProfilePics/Sarah.jpg" alt="Sarah Winkowski">
+                <div>
+```
+
+</div>
+
+## Your name, pronouns, and dates in the lab
+
+<div>
+
+``` html
+ <h5>Sarah Winkowski (2023-present)
+  <small class="pronouns">| they/them</small>
+                        </h5>
+```
+
+</div>
+
+## A 1-2 sentence description of your research interests
+
+<div>
+
+``` html
+<p>
+Sarah is a PhD student in the lab whose research interests is focused on understanding the impacts of climate-induced range shift on mycorrhizal community structure and function. Sarah also holds a M.A. in Museum Studies and has a keen interest in biological collections as references for biodiversity and global change.
+</p>
+```
+
+</div>
+
+## 1-2 sentences about your interests outside of lab
+
+<div>
+
+``` html
+<p>
+Outside the lab, Sarah’s favorite hobby is picking up new hobbies—currently they are experimenting with homebrewing cider, fiber arts, and some simple wood carving.
+</p>
+```
+
+</div>
+
+## Now for your links!
+
+We can link basically any website or profile that you'd like! Ones that
+Claire especially recommends are: **ORCID** (good excuse to create this
+if you don't have one yet!), **GoogleScholar page** (same!), your
+**GitHub profile** (access to your code eventually), and any other
+social media (eg **Instagram**, **Bluesky**, **etc**). I highly
+encourage you to create a Github webpage of your own, too, as I think
+that this can be helpful on the job market!
+
+All you need to do is change out the links here (eg for orcid) to your
+own!
+
+<div>
+
+``` html
+<!-- The ORCID icon -->
+<p>
+<li><a href="https://orcid.org/0000-0002-7563-242X" class="icon fa-orcid"> ORCID </a></li>
+
+<!-- The GitHub icon -->
+
+<li><a href="https://github.com/swinko" class="icon fa-github"> GitHub </a></li>
+
+<!-- The Instagram icon -->
+
+<li><a href="#" class="icon fa-instagram"> Instagram </a></li>
+</p>
+```
+
+</div>
+
+## And that's it!

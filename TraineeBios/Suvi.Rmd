@@ -1,0 +1,103 @@
+---
+title: "Suvi_Bio"
+author: "Claire Willing"
+date: "2025-01-23"
+output: html_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+## Welcome to the lab! We are so glad that you are here.
+
+Please add your bio information below so that we can add you to our lab
+website!
+
+## Your photo (drop a in image in this [folder](https://drive.google.com/drive/folders/1b-t3DPjfUFfXADmTtV-1n9TBSngy8Q6j?usp=sharing))
+
+Please name your photo: firstname.jpg (Claire will add based on the code
+below)
+
+<div>
+
+```         
+<div class="team-member">
+<img src="images/ProfilePics/Suvi.jpg" alt="Suvi Birch">
+                <div>
+```
+
+</div>
+
+## Your name, pronouns, and dates in the lab
+
+<div>
+
+``` html
+<h5>
+Suvi Birch (2024-present)
+<small class="pronouns">| she/her</small>
+</h5>
+```
+
+</div>
+
+## 
+
+## A 1-2 sentence description of your research interests
+
+<div>
+
+``` html
+<p>
+Suvi is an M.S. student in the lab who's research is focused on utilizing microbial innoculations to improve post-fire regeneration success of giant sequoia seedlings. She is passionate about creating programs to help more Black students enter the field of environmental science, just like the ones that helped her.
+</p>
+```
+
+</div>
+
+## 1-2 sentences about your interests outside of lab
+
+<div>
+
+``` html
+<p>
+Outside of campus, you can find Suvi hiking, crocheting, admiring trees, or reading with a cup of hot tea on a rainy Seattle afternoon. </p>
+```
+
+</div>
+
+## Now for your links!
+
+We can link basically any website or profile that you'd like! Ones that
+Claire especially recommends are: **ORCID** (good excuse to create this
+if you don't have one yet!), **GoogleScholar page** (same!), your
+**GitHub profile** (access to your code eventually), and any other
+social media (eg **Instagram**, **Bluesky**, **etc**). I highly
+encourage you to create a Github webpage of your own, too, as I think
+that this can be helpful on the job market!
+
+All you need to do is change out the links here (eg for orcid) to your
+own!
+
+<div>
+
+``` html
+<!-- The ORCID icon -->
+<p>
+<li><a href="https://orcid.org/0000-0002-7563-242X" 
+class="icon fa-orcid"> ORCID </a></li>
+
+<!-- The GitHub icon -->
+<li><a href="https://github.com/birch33" 
+class="icon fa-github"> GitHub </a></li>
+
+<!-- The Instagram icon -->
+
+<li><a href="#" 
+class="icon fa-instagram"> Instagram </a></li>
+</p>
+```
+
+</div>
+
+## And that's it!
