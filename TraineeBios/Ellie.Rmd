@@ -91,7 +91,6 @@ class="icon fa-orcid"> ORCID </a></li>
 class="icon fa-github"> GitHub </a></li>
 
 <!-- The Instagram icon -->
-
 <li><a href="#" 
 class="icon fa-instagram"> Instagram </a></li>
 </p>
