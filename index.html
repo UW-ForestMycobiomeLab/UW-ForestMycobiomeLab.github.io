@@ -120,11 +120,12 @@
 
             <!-- Here is the "Publications" card. -->
             <article id="publications">
-              <div class="example">  
-              <img  class="background-image" src="images/WebpageDecor/peekyramaria.jpg w-1200,h-500">  
+              <div class="main-photo-container">  
+              <img  class="background-image" src="images/WebpageDecor/peekyramaria.jpg">  
               <div class="overlay-text">    
-              <h1>Selected Publications</h1>    
-              </div></div>
+                <h1>Selected Publications</h1>    
+              </div>
+            </div>
                 <!-- Selected pubs -->
                 <h5>For a more complete list of publications, check out <a href="https://scholar.google.com/citations?user=gEuyD3sAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></h5>
                 <p>
@@ -160,6 +161,57 @@
                     <p><b>Willing, C. E.</b>, Pierroz, G., Coleman-Derr, D., & Dawson, T. E. (2020). The generalizability of water‐deficit on bacterial community composition; Site‐specific water‐availability predicts the bacterial community associated with coast redwood roots. <i>Molecular Ecology, 29</i>(23), 4721-4734. <a href="https://doi.org/10.1111/mec.15666" target="_blank">doi.org/10.1111/mec.15666</a></p>
                 </p>
             </article>
+            
+            <style>
+    /* Style for the main photo container */
+    .main-photo-container {
+        position: relative;
+        width: 100%;
+        height: 500px; /* Adjust height as needed */
+        overflow: hidden;
+    }
+
+    .background-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    /* Style for the publications list */
+    .publications-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .publication-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .publication-item img {
+        width: 150px; /* Set a fixed width */
+        height: 150px; /* Set a fixed height */
+        object-fit: cover; /* Ensure images maintain aspect ratio */
+    }
+
+    .publication-item p {
+        flex: 1;
+    }
+</style>
 
             <!-- Here is the "Research" card. -->
             <article id="research">
