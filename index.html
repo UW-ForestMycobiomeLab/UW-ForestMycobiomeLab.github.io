@@ -218,7 +218,8 @@
     color: black !important;
     text-decoration: none;
 }
-    /* Style for the publications list */
+
+/* Style for the publications list */
     .publications-list {
         display: flex;
         flex-wrap: wrap;
@@ -238,6 +239,18 @@
         height: 150px; /* Set a fixed height */
         object-fit: cover; /* Ensure images maintain aspect ratio */
     }
+    
+    #publications .image.left img {
+    width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures alignment */
+    margin: 10px 20px 10px 0; /* Spacing around the image */
+    float: left; /* Aligns images to the left */
+}
+
+#publications p {
+    overflow: hidden; /* Prevents text wrapping issues */
+}
 
     .publication-item p {
         flex: 1;
