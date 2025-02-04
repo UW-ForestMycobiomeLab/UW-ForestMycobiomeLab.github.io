@@ -244,13 +244,19 @@
         object-fit: cover; /* Ensure images maintain aspect ratio */
     }
     
-    #publications .image.left img {
-    width: 150px; /* Adjust size as needed */
+    #publications 
+   .image.left {
+    float: left; /* Align images to the left */
+    margin-right: 15px; /* Add space between the image and text */
+    margin-bottom: 10px; /* Ensure spacing below */
+    width: 120px; /* Set a fixed width for uniformity */
     height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensures alignment */
-    margin: 10px 20px 10px 0; /* Spacing around the image */
-    float: left; /* Aligns images to the left */
 }
+
+p {
+    overflow: hidden; /* Prevent text from wrapping under the image */
+}
+
 
 #publications .pub-entry {
     display: flex;
