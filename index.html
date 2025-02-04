@@ -125,7 +125,7 @@
               <div class="overlay-box">    
               <div class="overlay-text">    
                 <h1>Selected Publications</h1> 
-                <p>For a more complete list of publications, check out our</p>
+                <p>For a more complete list of publications, check out</p>
                   <a href="https://scholar.google.com/citations?user=gEuyD3sAAAAJ&hl=en&oi=ao" target="_blank">
                 <button class="google-scholar-button">Google Scholar</button>
                </a>
@@ -210,6 +210,12 @@
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+}
+
+/* Ensure the <a> tag inside .overlay-text doesn't override the button's color */
+.overlay-text a {
+    color: inherit; /* Inherit color from parent (button) */
+    text-decoration: none; /* Remove underline */
 }
 
     /* Style for the publications list */
