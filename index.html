@@ -205,8 +205,7 @@
    .google-scholar-button {
     background-color: white; /* White background */
     color: black !important; /* Force text color to be black */
-    border: 1px solid black; /* Optional: Add a border for better visibility */
-    padding: 5px 10px;
+    padding: 5px 5px;
     border-radius: 5px;
     font-size: 14px;
     font-weight: bold; /* Optional: Make the text bolder */
@@ -248,7 +247,23 @@
     float: left; /* Aligns images to the left */
 }
 
-#publications p {
+#publications .pub-entry {
+    display: flex;
+    align-items: flex-start; /* Aligns images with the top of text */
+    margin-bottom: 15px; /* Spacing between publications */
+}
+
+#publications .pub-entry img {
+    width: 120px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+    flex-shrink: 0; /* Prevents image from resizing inconsistently */
+}
+
+#publications .pub-text {
+    flex: 1; /* Ensures text takes up remaining space */
+}
+    #publications p {
     overflow: hidden; /* Prevents text wrapping issues */
 }
 
