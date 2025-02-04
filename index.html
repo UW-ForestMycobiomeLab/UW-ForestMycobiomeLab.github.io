@@ -203,13 +203,18 @@
     
     /* Style for the Google Scholar button */
    .google-scholar-button {
-    background-color: white; /* White background */
-    color: black !important; /* Force text color to be black */
-    padding: 5px 5px;
-    border-radius: 5px;
+    margin-top: 5px; /* Reduce space above the button */
+    background: rgba(0, 0, 0, 0.3); /* Adjust transparency (0.3 makes it more transparent) */
+    color: white;
+    border: none;
+    padding: 8px 16px;
     font-size: 14px;
-    font-weight: bold; /* Optional: Make the text bolder */
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+.google-scholar-button:hover {
+    background: rgba(0, 0, 0, 0.5); /* Slightly darker on hover */
 }
 
 /* Ensure that any links inside buttons don't override the button's color */
