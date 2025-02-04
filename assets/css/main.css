@@ -1029,12 +1029,12 @@ button {
     overflow: hidden; /* Prevents overflow issues */
 }
 
-.background-image {
+.main-photo-container {
+    position: relative;
     width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+    overflow: hidden; /* Prevents overflow issues */
 }
+
 
 .overlay-box {
     position: absolute;
@@ -1211,9 +1211,9 @@ body.is-article-visible #bg:after {
   height: 100px;
   border: 2px solid #e9ecef;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  flex-shrink: 0; /* Ensure the image does not shrink */
+  object-fit: cover;
+  object-position: center bottom; /* Shift focus towards the bottom */
+  flex-shrink: 0;
 }
 .team-member div {
   max-width: 1200px;
