@@ -202,22 +202,22 @@
     }
     
     /* Style for the Google Scholar button */
-    .google-scholar-button {
+   .google-scholar-button {
     background-color: white; /* White background */
-    color: black; /* Text color */
-    border: none;
-    padding: 5px 5px;
+    color: black !important; /* Force text color to be black */
+    border: 1px solid black; /* Optional: Add a border for better visibility */
+    padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
+    font-weight: bold; /* Optional: Make the text bolder */
     cursor: pointer;
 }
 
-/* Ensure the <a> tag inside .overlay-text doesn't override the button's color */
-.overlay-text a {
-    color: inherit; /* Inherit color from parent (button) */
-    text-decoration: none; /* Remove underline */
+/* Ensure that any links inside buttons don't override the button's color */
+.google-scholar-button a {
+    color: black !important;
+    text-decoration: none;
 }
-
     /* Style for the publications list */
     .publications-list {
         display: flex;
