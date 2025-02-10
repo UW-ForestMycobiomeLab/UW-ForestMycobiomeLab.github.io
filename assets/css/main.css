@@ -974,26 +974,6 @@ button {
   text-align: justify;
 }
 
-.google-scholar-button {
-  margin-top: 0px;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  padding: 8px 8px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.google-scholar-button:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.google-scholar-button a {
-  color: black !important;
-  text-decoration: none;
-}
-
 .publications-list {
   display: flex;
   flex-wrap: wrap;
@@ -1101,6 +1081,28 @@ button {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.4;
+}
+
+.google-scholar-button {
+  margin-top: 0px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 8px 8px;
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.google-scholar-button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.google-scholar-button a {
+  color: black !important;
+  text-decoration: none;
 }
 
 /* BG */

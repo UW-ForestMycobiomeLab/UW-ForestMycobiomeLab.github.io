@@ -56,3 +56,25 @@
     font-weight: bold;
     line-height: 1.4;
 }
+
+.google-scholar-button {
+    margin-top: 0px; // Reduce space above the button
+    background: rgba(0, 0, 0, 0.6); // Adjust transparency (0.3 makes it more transparent)
+    color: white;
+    border: none;
+    padding: 8px 8px;
+    font-size: 14px;
+    align-items: center; // Align text to the top
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.google-scholar-button:hover {
+    background: rgba(0, 0, 0, 0.5); // Slightly darker on hover
+}
+
+.google-scholar-button a {
+    color: black !important;
+    text-decoration: none;
+}
