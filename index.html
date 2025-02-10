@@ -59,6 +59,49 @@
                     <!-- Here is a paragraph where you can put your position and institution, or
                         a short line about yourself.
                     -->
+                    <section class="text-overlay">
+    <div class="image-container">
+        <img src="your-image-url.jpg" alt="Research Image" class="background-image">
+        <div class="overlay">
+            <p>Just as studies of gut microbiomes have revolutionized our understanding of human health, belowground, plant roots are centers of plant metabolism where interactions with microbial communities can have critical implications for ecosystem function. At the confluence of microbial ecology, plant community ecology, and plant physiological ecology, our research investigates the impact of climate change on forest microbiomes and the consequences for ecosystem resistance and resilience.</p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .image-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .background-image {
+        width: 100%;
+        height: auto;
+        opacity: 0.7;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .overlay p {
+        max-width: 800px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+</style>
+
                     <p>
                         School of Environmental & Forest Sciences <br> University of Washington
                     </p>
