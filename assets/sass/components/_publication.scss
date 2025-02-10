@@ -1,0 +1,68 @@
+.google-scholar-button {
+    margin-top: 0px; // Reduce space above the button
+    background: rgba(0, 0, 0, 0.6); // Adjust transparency (0.3 makes it more transparent)
+    color: white;
+    border: none;
+    padding: 8px 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.google-scholar-button:hover {
+    background: rgba(0, 0, 0, 0.5); // Slightly darker on hover
+}
+
+.google-scholar-button a {
+    color: black !important;
+    text-decoration: none;
+}
+
+.publications-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.publication-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.publication-item img {
+    width: 150px; // Set a fixed width
+    height: 150px; // Set a fixed height
+    object-fit: cover; // Ensure images maintain aspect ratio
+}
+
+#publications .image.left {
+    float: left; // Align images to the left
+    margin-right: 15px; // Add space between the image and text
+    margin-bottom: 10px; // Ensure spacing below
+    width: 120px; // Set a fixed width for uniformity
+    height: auto; // Maintain aspect ratio
+}
+
+#publications p {
+    overflow: hidden; // Prevent text from wrapping under the image
+}
+
+#publications .pub-entry {
+    display: flex;
+    align-items: flex-start; // Aligns images with the top of text
+    margin-bottom: 15px; // Spacing between publications
+}
+
+#publications .pub-entry img {
+    width: 120px; // Adjust size as needed
+    height: auto; // Maintain aspect ratio
+    margin-right: 15px; // Space between image and text
+    flex-shrink: 0; // Prevents image from resizing inconsistently
+}
+
+#publications .pub-text {
+    flex: 1; // Ensures text takes up remaining space
+}
