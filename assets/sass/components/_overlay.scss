@@ -33,6 +33,9 @@
 .main-photo-container {
     position: relative;
     width: 100%;
+    display: block;
+    height: auto;
+    margin: (_size(element-margin) * 1.25) auto; /* Center the image */
     overflow: hidden; // Prevents overflow issues
 }
 
@@ -64,10 +67,13 @@
     border: none;
     padding: 8px 8px;
     font-size: 14px;
-    align-items: center; // Align text to the top
-    text-align: center;
     cursor: pointer;
     transition: background 0.3s;
+    display: flex;
+    justify-content: center; // Center the text horizontally
+    align-items: center; // Center the text vertically
+    margin: 0 auto; // Center the button itself
+    text-align: center;
 }
 
 .google-scholar-button:hover {
