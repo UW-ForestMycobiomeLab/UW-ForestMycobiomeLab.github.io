@@ -1024,15 +1024,27 @@ button {
   flex: 1;
 }
 
-.image-container {
+.main-photo-container, .home-photo-container {
   position: relative;
   width: 100%;
+  display: block;
+  height: 400px;
+  margin: 2.5rem auto; /* Center the image */
+  overflow: hidden;
+}
+
+.home-photo-container {
+  height: 300px;
 }
 
 .background-image {
   width: 100%;
-  height: auto;
-  opacity: 0.7;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 0.6;
 }
 
 .overlay {
@@ -1056,15 +1068,6 @@ button {
   line-height: 1.6;
 }
 
-.main-photo-container {
-  position: relative;
-  width: 100%;
-  display: block;
-  height: auto;
-  margin: 2.5rem auto; /* Center the image */
-  overflow: hidden;
-}
-
 .overlay-box {
   position: absolute;
   top: 0;
@@ -1084,6 +1087,7 @@ button {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.4;
+  vertical-align: middle;
 }
 
 .google-scholar-button {
