@@ -38,7 +38,8 @@
 		&.left,
 		&.right {
 			max-width: 40%;
-
+			opacity: 1.0;
+			
 			img {
 				width: 100%;
 			}
@@ -79,14 +80,13 @@
 		&.wide {
 			display: block;
 			width: 100%; /* Make the image fill the full frame width */
-			height: 300px; /* Set the height for cropping */
 			overflow: hidden; /* Hide the overflow */
+			margin: (_size(element-margin) * 1.25) auto; /* Center the image */
 			
 			img {
-                width: 100%;
-				height: auto;	
-				object-fit: cover; /* Ensure the image covers the area */
-                object-position: 0 50%; /* Center the image */
+				height: 300px; /* Set the height for cropping */
+				// object-fit: cover; /* Ensure the image covers the area */
+                // object-position: center; /* Center the image */
 			}
 		}
 

@@ -7,17 +7,12 @@
     overflow: hidden; // Prevents overflow issues
 }
 
-.home-photo-container {
-    @extend .main-photo-container;
-    height: 300px; // Adjust height as needed
-}
-
 .background-image {
     width: 100%;
     height: 100%;
     object-fit: cover; // Ensure the image covers the container
     object-position: center; // Center the image
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .overlay {
@@ -47,12 +42,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); // Darker for better readability
+    // background: rgba(0, 0, 0, 0.4); // Darker for better readability
     display: flex;
     align-items: center; // Align text to the top
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    // padding: 10px;
 }
 
 .overlay-text {
@@ -61,29 +56,4 @@
     font-weight: bold;
     line-height: 1.4;
     vertical-align: middle;
-}
-
-.google-scholar-button {
-    margin-top: 0px; // Reduce space above the button
-    background: rgba(0, 0, 0, 0.6); // Adjust transparency (0.3 makes it more transparent)
-    color: white;
-    border: none;
-    padding: 8px 8px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background 0.3s;
-    display: flex;
-    justify-content: center; // Center the text horizontally
-    align-items: center; // Center the text vertically
-    margin: 0 auto; // Center the button itself
-    text-align: center;
-}
-
-.google-scholar-button:hover {
-    background: rgba(0, 0, 0, 0.5); // Slightly darker on hover
-}
-
-.google-scholar-button a {
-    color: black !important;
-    text-decoration: none;
 }

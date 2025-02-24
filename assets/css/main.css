@@ -114,7 +114,7 @@ html {
 
 body, input, select, textarea {
   color: #ffffff;
-  font-family: "Graphik", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.65;
@@ -561,6 +561,7 @@ input[type=radio] + label:before {
 }
 .image.left, .image.right {
   max-width: 40%;
+  opacity: 1;
 }
 .image.left img, .image.right img {
   width: 100%;
@@ -594,16 +595,11 @@ input[type=radio] + label:before {
 .image.wide {
   display: block;
   width: 100%; /* Make the image fill the full frame width */
-  height: 300px; /* Set the height for cropping */
   overflow: hidden; /* Hide the overflow */
+  margin: 2.5rem auto; /* Center the image */
 }
 .image.wide img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover; /* Ensure the image covers the area */
-  -o-object-position: 0 50%;
-     object-position: 0 50%; /* Center the image */
+  height: 300px; /* Set the height for cropping */
 }
 @media screen and (max-width: 736px) {
   .image.main {
@@ -844,7 +840,7 @@ button,
   -webkit-appearance: none;
   appearance: none;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 4px;
   border: 0;
   box-shadow: inset 0 0 0 1px #ffffff;
@@ -868,7 +864,7 @@ input[type=reset]:hover,
 input[type=button]:hover,
 button:hover,
 .button:hover {
-  background-color: rgba(255, 255, 255, 0.075);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 input[type=submit]:active,
 input[type=reset]:active,
@@ -957,7 +953,7 @@ button {
 .team-member h5 {
   font-size: 1.25rem;
   font-weight: 500;
-  font-family: "Graphik", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   text-align: justify;
   text-transform: none;
@@ -1024,17 +1020,13 @@ button {
   flex: 1;
 }
 
-.main-photo-container, .home-photo-container {
+.main-photo-container {
   position: relative;
   width: 100%;
   display: block;
   height: 400px;
   margin: 2.5rem auto; /* Center the image */
   overflow: hidden;
-}
-
-.home-photo-container {
-  height: 300px;
 }
 
 .background-image {
@@ -1044,7 +1036,7 @@ button {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .overlay {
@@ -1074,12 +1066,10 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
 }
 
 .overlay-text {
@@ -1088,31 +1078,6 @@ button {
   font-weight: bold;
   line-height: 1.4;
   vertical-align: middle;
-}
-
-.google-scholar-button {
-  margin-top: 0px;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  padding: 8px 8px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.google-scholar-button:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.google-scholar-button a {
-  color: black !important;
-  text-decoration: none;
 }
 
 /* BG */
@@ -1266,6 +1231,7 @@ body.is-preload #bg:before {
   margin-bottom: 0;
 }
 #header .content p {
+  text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
   line-height: 2;
@@ -1293,6 +1259,7 @@ body.is-preload #bg:before {
   height: 2.75rem;
   line-height: 2.75rem;
   padding: 0 1.25rem 0 1.45rem;
+  text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
   border-bottom: 0;
