@@ -952,7 +952,7 @@ button {
   font-weight: 500;
   font-family:  'DM Sans', sans-serif;
   color: white;
-  text-align: justify;
+  text-align: left;
   text-transform: none;
   margin: 0;
   line-height: 1.2;
@@ -960,11 +960,11 @@ button {
 .team-member p {
   margin: 5px 0;
   color: white;
-  text-align: justify;
+  text-align: left;
 }
 .team-member .pronouns {
   color: #ddd;
-  text-align: justify;
+  text-align: left;
 }
 
 .publications-list {
