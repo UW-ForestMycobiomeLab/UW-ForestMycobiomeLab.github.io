@@ -1471,3 +1471,54 @@ body.is-article-visible #footer {
 body.is-preload #footer {
   opacity: 0;
 }/*# sourceMappingURL=main.css.map */
+
+body.is-preload #footer {
+  opacity: 0;
+}/*# sourceMappingURL=main.css.map */
+
+/* ============================================
+   JOIN US SECTION - LINKS & READABILITY
+   Added: [Today's Date]
+   ============================================ */
+
+/* Make all links in the Join Us section more visible */
+article#join a {
+    color: #ffffff; /* White to match your theme */
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.5); /* Semi-transparent underline */
+    font-weight: 500; /* Medium weight for better visibility */
+    transition: all 0.2s ease-in-out;
+}
+
+article#join a:hover {
+    color: #ffffff;
+    text-decoration-color: #ffffff; /* Solid underline on hover */
+    background-color: rgba(255, 255, 255, 0.075); /* Subtle background highlight */
+}
+
+article#join a:visited {
+    color: rgba(255, 255, 255, 0.8); /* Slightly dimmed for visited links */
+}
+
+/* Improve readability of main text */
+article#join p {
+    line-height: 1.65; /* Matches your existing line-height */
+    margin-bottom: 1.5em;
+}
+
+/* Improve list readability */
+article#join ul,
+article#join ol {
+    line-height: 1.65;
+    margin-bottom: 2rem;
+    padding-left: 2em;
+}
+
+article#join li {
+    margin-bottom: 0.75em;
+    padding-left: 0.5em;
+}
+
+/* Improve heading spacing */
+article#join h2 {
+    marg
