@@ -1591,3 +1591,31 @@ article#join li {
 /* Improve heading spacing */
 article#join h2 {
     marg
+
+/* ============================================
+   FINAL LINK OVERRIDES (GLOBAL)
+   ============================================ */
+
+a,
+#main a,
+article a,
+#footer a,
+#header a {
+  border-bottom: none !important;
+  text-decoration: none;
+}
+a {
+  color: #7fd3c8;
+  font-weight: 500;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+a:hover {
+  color: #a6ede3;
+  background-color: rgba(127, 211, 200, 0.12);
+}
+
+a:visited {
+  color: #6abdb2;
+}
+
