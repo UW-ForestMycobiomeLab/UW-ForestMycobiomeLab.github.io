@@ -33,6 +33,20 @@ body {
   line-height: 1;
 }
 
+/* Apply Inter font site-wide */
+html, body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Optionally scale specific elements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+p, li, a, span {
+  font-weight: 400;
+}
+
 ol, ul {
   list-style: none;
 }
