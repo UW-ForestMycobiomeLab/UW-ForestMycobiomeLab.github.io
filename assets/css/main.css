@@ -1478,26 +1478,35 @@ body.is-preload #footer {
 
 /* ============================================
    JOIN US SECTION - LINKS & READABILITY
-   Added: [Today's Date]
    ============================================ */
 
-/* Make all links in the Join Us section more visible */
 article#join a {
-    color: #ffffff; /* White to match your theme */
-    text-decoration: underline;
-    text-decoration-color: rgba(255, 255, 255, 0.5); /* Semi-transparent underline */
-    font-weight: 500; /* Medium weight for better visibility */
-    transition: all 0.2s ease-in-out;
+  color: #b9e3ff;                /* Accent link color */
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 0.15em 0.25em;
+  margin: -0.15em -0.25em;       /* Keeps layout from shifting */
+  transition: color 0.15s ease, background-color 0.15s ease;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 article#join a:hover {
-    color: #ffffff;
-    text-decoration-color: #ffffff; /* Solid underline on hover */
-    background-color: rgba(255, 255, 255, 0.075); /* Subtle background highlight */
+  color: #ffffff;
+  background-color: rgba(185, 227, 255, 0.12);
 }
 
+/* Visited links: subtle hue shift */
 article#join a:visited {
-    color: rgba(255, 255, 255, 0.8); /* Slightly dimmed for visited links */
+  color: #c7b9ff;
+}
+
+/* Keyboard accessibility */
+article#join a:focus-visible {
+  outline: 2px solid #b9e3ff;
+  outline-offset: 3px;
+  background-color: rgba(185, 227, 255, 0.18);
 }
 
 /* Improve readability of main text */
