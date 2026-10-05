@@ -1618,4 +1618,7 @@ a:hover {
 a:visited {
   color: #6abdb2;
 }
+#header .content p {
+  text-align: center;
+}
 
