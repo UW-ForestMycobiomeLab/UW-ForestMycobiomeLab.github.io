@@ -33,6 +33,20 @@ body {
   line-height: 1;
 }
 
+/* Apply Inter font site-wide */
+html, body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Optionally scale specific elements */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+p, li, a, span {
+  font-weight: 400;
+}
+
 ol, ul {
   list-style: none;
 }
@@ -118,6 +132,52 @@ body, input, select, textarea {
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.65;
+}
+/* ============================================
+   GLOBAL TYPOGRAPHY OVERRIDES
+   ============================================ */
+
+html {
+  font-size: 17px;              /* Slightly airier than default */
+  line-height: 1.55;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont,
+               'Segoe UI', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* Headings: cleaner, less shouty */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;     /* Remove HTML5 UP wide spacing */
+  line-height: 1.25;
+}
+
+/* Undo Dimension’s aggressive letter spacing */
+h1, h2 {
+  letter-spacing: 0.15rem;
+}
+
+h3, h4, h5, h6 {
+  letter-spacing: 0.05rem;
+}
+
+/* Body text rhythm */
+p, li {
+  max-width: 65ch;
+}
+
+/* Code blocks stay DM Sans */
+code,
+pre {
+  font-family: 'DM Sans', monospace;
 }
 
 a {
@@ -1471,3 +1531,91 @@ body.is-article-visible #footer {
 body.is-preload #footer {
   opacity: 0;
 }/*# sourceMappingURL=main.css.map */
+
+body.is-preload #footer {
+  opacity: 0;
+}/*# sourceMappingURL=main.css.map */
+
+/* ============================================
+   JOIN US SECTION - LINKS & READABILITY
+   ============================================ */
+
+article#join a {
+  color: #b9e3ff;                /* Accent link color */
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 0.15em 0.25em;
+  margin: -0.15em -0.25em;       /* Keeps layout from shifting */
+  transition: color 0.15s ease, background-color 0.15s ease;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+article#join a:hover {
+  color: #ffffff;
+  background-color: rgba(185, 227, 255, 0.12);
+}
+
+/* Visited links: subtle hue shift */
+article#join a:visited {
+  color: #c7b9ff;
+}
+
+/* Keyboard accessibility */
+article#join a:focus-visible {
+  outline: 2px solid #b9e3ff;
+  outline-offset: 3px;
+  background-color: rgba(185, 227, 255, 0.18);
+}
+
+/* Improve readability of main text */
+article#join p {
+    line-height: 1.65; /* Matches your existing line-height */
+    margin-bottom: 1.5em;
+}
+
+/* Improve list readability */
+article#join ul,
+article#join ol {
+    line-height: 1.65;
+    margin-bottom: 2rem;
+    padding-left: 2em;
+}
+
+article#join li {
+    margin-bottom: 0.75em;
+    padding-left: 0.5em;
+}
+
+/* Improve heading spacing */
+article#join h2 {
+    marg
+
+/* ============================================
+   FINAL LINK OVERRIDES (GLOBAL)
+   ============================================ */
+
+a,
+#main a,
+article a,
+#footer a,
+#header a {
+  border-bottom: none !important;
+  text-decoration: none;
+}
+a {
+  color: #7fd3c8;
+  font-weight: 500;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+a:hover {
+  color: #a6ede3;
+  background-color: rgba(127, 211, 200, 0.12);
+}
+
+a:visited {
+  color: #6abdb2;
+}
+
